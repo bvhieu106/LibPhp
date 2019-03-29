@@ -21,7 +21,7 @@ class KeyWordDensityComponent{
         return preg_split($this->_splitPattern, strtolower($string));
     }
 
-    public function getKeyWordDensityTable($sort = true){
+    public function getKeyWordDensityTable($sort = false){
         if($sort)
         {
             foreach ($this->_wordDensityHashTable as &$table)
